@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>育成アプリ</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+  <div class="status-bar">
+    <div class="status-item"><span>🍽</span><div class="bar" id="bar-hunger"></div></div>
+    <div class="status-item"><span>😴</span><div class="bar" id="bar-sleep"></div></div>
+    <div class="status-item"><span>🧼</span><div class="bar" id="bar-clean"></div></div>
+    <div class="status-item"><span>😊</span><div class="bar" id="bar-happy"></div></div>
+  </div>
+
+  <div class="room">
+    <img src="living_base.webp" class="room-bg" id="room-bg">
+    <img src="char_idle.png" id="character" class="char">
+  </div>
+
+  <div class="action-buttons">
+    <button onclick="goAction('eat')">🍽 食事</button>
+    <button onclick="goAction('sleep')">🛏 寝る</button>
+    <button onclick="goAction('bath')">🛁 入浴</button>
+    <button onclick="goAction('toilet')">🚽 トイレ</button>
+    <button onclick="goAction('change')">👕 着替え</button>
+    <button onclick="goAction('play')">🎮 遊ぶ</button>
+    <button onclick="goAction('study')">📚 勉強</button>
+  </div>
+
+</body>
+</html>
