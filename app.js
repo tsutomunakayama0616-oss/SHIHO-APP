@@ -90,7 +90,15 @@ function renderLivingItems() {
 ----------------------------------- */
 function applyOutfit() {
   const char = document.getElementById("character");
-  char.src = `${currentOutfit}.png`;  // default.png / outfit1.png など
+
+  // ホーム画面は outfit を使わず char_idle.png を表示
+  if (window.location.pathname.includes("index.html")) {
+    char.src = "char_idle.png";
+    return;
+  }
+
+  // アクション画面では outfit を適用
+  char.src = `${currentOutfit}.png`;
 }
 
 /* -----------------------------------
