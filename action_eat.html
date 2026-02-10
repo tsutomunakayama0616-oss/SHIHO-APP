@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="action.js"></script>
+</head>
+
+<body>
+
+  <div class="status-bar">
+    <div class="status-item"><span>🍽</span><div class="bar" id="bar-hunger"></div></div>
+    <div class="status-item"><span>😴</span><div class="bar" id="bar-sleep"></div></div>
+    <div class="status-item"><span>🧼</span><div class="bar" id="bar-clean"></div></div>
+    <div class="status-item"><span>😊</span><div class="bar" id="bar-happy"></div></div>
+  </div>
+
+  <div class="room">
+    <img src="kitchen_base.webp" class="room-bg">
+    <img src="char_eat.png" class="char">
+  </div>
+
+  <div class="action-buttons">
+    <button onclick="finishAction('eat')">← ホームへ戻る</button>
+  </div>
+
+</body>
+</html>
